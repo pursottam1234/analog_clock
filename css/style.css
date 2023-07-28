@@ -1,69 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: #eef4f6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #eef4f6;
 }
 
-body{
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(/assets/p.png);
-    background-size: cover;
-    background-origin:inherit;
-    background-repeat: no-repeat;
-    display: flex;
-    padding-right: 200px;
-    justify-content: right;
-   
+body {
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../assets/p.png);
+  background-size: cover;
+  background-origin: inherit;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-right: 200px;
+  justify-content: right;
 }
 
-.container{
-    position: relative;
+.container {
+  position: relative;
 }
 
-.clock{
-    background-color: rgba(10, 0, 0, 0.614);
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.514);
-    box-shadow: 20px 15px 50px rgb(1, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.clock {
+  background-color: rgba(10, 0, 0, 0.614);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.514);
+  box-shadow: 20px 15px 50px rgb(1, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.clock span{
-    position: absolute;
-    transform:rotate(calc(30deg*var(--i)));
-    inset: 15px;
-    text-align: center;
+.clock span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 15px;
+  text-align: center;
 }
-.clock span b{
-    transform: rotate(calc(-30deg*var(--i)));
-    display: inline-block;
+.clock span b {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
 }
-.clock::before{
-    content: '';
-    position: absolute;
-    background-color: #e1e8eb;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
+.clock::before {
+  content: "";
+  position: absolute;
+  background-color: #e1e8eb;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
 }
-.hand{
-    position: absolute ;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    z-index: 2;
+.hand {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
 }
-.hand i{
-    position: absolute;
-    background-color: var(--clr);
-    height: var(--h);
-    width: var(--w);
-    border-radius: 6px;
+.hand i {
+  position: absolute;
+  background-color: var(--clr);
+  height: var(--h);
+  width: var(--w);
+  border-radius: 6px;
 }
