@@ -31,7 +31,7 @@ body {
   box-shadow: 20px 15px 50px rgb(1, 0, 0);
   display: flex;
   justify-content: center;
-  align-items: right;
+  align-items: center;
 }
 .clock span {
   position: absolute;
